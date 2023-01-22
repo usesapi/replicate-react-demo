@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
-import { init } from "./sapi-web-sdk";
+import { init } from "@sapi/js-sdk";
 
 init({ sapiId: "api-replicate-com-qvw8ir", requireAuth: true });
 
