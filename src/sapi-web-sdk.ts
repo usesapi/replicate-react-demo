@@ -1,7 +1,7 @@
-import fetchIntercept from "fetch-intercept";
+import fetchIntercept from 'fetch-intercept';
 
-const SAPI_API_BASE_URL = "https://dev-api.usesapi.com/";
-const SAPI_PROXY_HOST = "dev-proxy.usesapi.com";
+const SAPI_API_BASE_URL = "https://api.usesapi.com/";
+const SAPI_PROXY_HOST = "proxy.usesapi.com";
 
 interface SapiCreateTokenResponse {
   token: string;
@@ -21,12 +21,12 @@ class Sapi {
     sapiId,
     tokenOwner = "anonymous",
     platform = "app",
-    requireAuth,
+    requireAuth = false,
   }: {
     sapiId: string;
     tokenOwner?: string;
     platform?: string;
-    requireAuth: boolean;
+    requireAuth?: boolean;
   }) {
     this.sapiId = sapiId;
     this.proxyHost = `${sapiId}.${SAPI_PROXY_HOST}`;
@@ -146,7 +146,6 @@ class Sapi {
     if (!localData) {
       return false;
     }
-    console.log(localData.expiresAt, new Date().toISOString());
     return (
       localData.expiresAt >
       new Date(Date.now() + this.expirationThresholdMs).toISOString()

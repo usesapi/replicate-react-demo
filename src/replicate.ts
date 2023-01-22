@@ -3,7 +3,7 @@ const modelId =
 
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
-export const createPokemon = async (prompt: string): Promise<string> => {
+export const createPokemon = async (prompt: string): Promise<string | null> => {
   const res = await fetch(`https://api.replicate.com/v1/predictions`, {
     method: "POST",
     headers: {
@@ -21,6 +21,9 @@ export const createPokemon = async (prompt: string): Promise<string> => {
   });
   const json = await res.json();
   const id = json["id"];
+  if (!id) {
+    return null;
+  }
   let result = await checkResult(id);
   while (!result) {
     await sleep(1000);

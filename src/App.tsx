@@ -3,7 +3,7 @@ import { Button, Modal, Form, Spin, Input } from "antd";
 import { useRequest } from "ahooks";
 import { createPokemon } from "./replicate";
 import ReCAPTCHA from "react-google-recaptcha";
-import { isTokenValid, authToken } from "./sapi-sdk";
+import { isTokenValid, authToken } from "./sapi-web-sdk";
 
 export default function App() {
   const [pokemon, setPokemon] = useState<string | null>();
