@@ -1,9 +1,11 @@
-import React, { useState } from "react";
-import { Button, Modal, Form, Spin, Input } from "antd";
-import { useRequest } from "ahooks";
-import { createPokemon } from "./replicate";
-import ReCAPTCHA from "react-google-recaptcha";
-import { isTokenValid, authToken } from "./sapi-web-sdk";
+import { useRequest } from 'ahooks';
+import { Button, Form, Input, Modal, Spin } from 'antd';
+import React, { useState } from 'react';
+import ReCAPTCHA from 'react-google-recaptcha';
+
+import { authToken, isTokenValid } from 'sapi-js-sdk';
+
+import { createPokemon } from './replicate';
 
 export default function App() {
   const [pokemon, setPokemon] = useState<string | null>();
