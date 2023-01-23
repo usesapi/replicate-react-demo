@@ -15,7 +15,6 @@
     "dayjs": "^1.11.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-google-recaptcha": "^2.1.0",
     "react-scripts": "5.0.1",
     "@sapi/js-sdk": "github:usesapi/sapi-js-sdk",
     "typescript": "^4.9.4",
