@@ -21,6 +21,10 @@ Sign in to your replicate account, open the [Account](https://replicate.com/acco
 Sign in to [Sapi](https://console.usesapi.com), create a new Replicate Sapi and configure it with the Replicate API Token.\
 Configure your Replicate Sapi ID in the `.env` file
 
+```
+REACT_APP_SAPI_ID=api-replicate-com-....
+```
+
 ## Running the app
 
 Run the command `npm install` to install all the necessary dependencies.\
