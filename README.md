@@ -1,5 +1,5 @@
 # Sapi
-This project uses [Sapi](https://usesapi.com) to allow using the replicate API without developing a backend. To learn more, check out this tutorial:
+This project uses [Sapi](https://usesapi.com) to allow using the replicate API without developing a backend. To learn more, visit the full tutorial at: https://sapi.gitbook.io/replicate.com-apps-tutorials/react-app-create-your-own-pokemon
 
 # How To Use
 
@@ -20,6 +20,10 @@ Sign in to your replicate account, open the [Account](https://replicate.com/acco
 
 Sign in to [Sapi](https://console.usesapi.com), create a new Replicate Sapi and configure it with the Replicate API Token.\
 Configure your Replicate Sapi ID in the `.env` file
+
+```
+REACT_APP_SAPI_ID=api-replicate-com-....
+```
 
 ## Running the app
 
