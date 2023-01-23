@@ -17,7 +17,7 @@
     "react-dom": "^18.2.0",
     "react-google-recaptcha": "^2.1.0",
     "react-scripts": "5.0.1",
-    "sapi-js-sdk": "github:usesapi/sapi-js-sdk#ac93057acc2c0adcc7969aef7eefe19f478dcdf5",
+    "@sapi/js-sdk": "github:usesapi/sapi-js-sdk",
     "typescript": "^4.9.4",
     "web-vitals": "^2.1.4"
   },

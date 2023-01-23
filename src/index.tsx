@@ -1,10 +1,13 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import "./index.css";
-import App from "./App";
-import { init } from "sapi-js-sdk";
+import './index.css';
 
-init({ sapiId: "api-replicate-com-e9s4zk", requireAuth: true });
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+import { init } from '@sapi/js-sdk';
+
+import App from './App';
+
+init({ sapiId: process.env.REACT_APP_SAPI_ID, requireAuth: true });
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement

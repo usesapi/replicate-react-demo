@@ -3,7 +3,7 @@ import { Button, Form, Input, Modal, Spin } from 'antd';
 import React, { useState } from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
 
-import { authToken, isTokenValid } from 'sapi-js-sdk';
+import { authToken, isTokenValid } from '@sapi/js-sdk';
 
 import { createPokemon } from './replicate';
 
