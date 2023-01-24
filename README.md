@@ -5,15 +5,15 @@ This project uses [Sapi](https://usesapi.com) to allow using the replicate API w
 
 ## Prerequisites
 
-- Node.js and npm (comes with Node) installed on your machine. You can download Node.js from [here](https://nodejs.org/en/download/).
-- Create-React-App (CRA) installed on your machine. You can install it by running `npm install -g create-react-app`
+1. Node.js and npm (comes with Node) installed on your machine. We recomment to use [NVM](https://github.com/nvm-sh/nvm).
+2. Create-React-App (CRA) installed on your machine. You can install it by running `npm install -g create-react-app`
 
 ## Cloning the app
 
 Open a terminal and navigate to the directory where you want to clone the app.\
 Run the command `git clone git@github.com:usesapi/replicate-react-native-demo.git`
 
-## Replicate
+## Get Replicate API Token
 Sign in to your replicate account, open the [Account](https://replicate.com/account) page and copy your API Token.
 
 ## Configure your Sapi Proxy
