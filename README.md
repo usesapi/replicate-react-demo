@@ -1,3 +1,6 @@
+# Demo
+Live working demo https://replicate-react.web.app/
+
 # Sapi
 This project uses [Sapi](https://usesapi.com) to allow using the replicate API without developing a backend. To learn more, visit the full tutorial at: https://sapi.gitbook.io/replicate.com-apps-tutorials/react-app-create-your-own-pokemon
 
